@@ -1,3 +1,4 @@
+
 body {
     text-align: center;
     padding-top: 45px;    
@@ -11,14 +12,12 @@ body {
 
 .navbar-fixed-top {
     height: 45px;
+    background-color: rgb(236, 152, 6);
   }
 
   .parallax { 
     /* The image used */
     background-image: url("wall.png");
-
-    /* Set a specific height */
-    height: 100%; 
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -28,13 +27,14 @@ body {
 }
 
 .welcome {
+    padding-top: 20px;
+    padding-bottom: 20px;
     font-size: 60px;
-    padding-left: 20px;
 }
 
 
 .welcome2 {
-    padding-left: 20px;
+    padding-bottom: 20px;
     color: grey;
 }
 
@@ -144,3 +144,11 @@ ul{
   figcaption {
       font-size: 25px;
   }
+
+  .contacts {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+
