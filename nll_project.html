@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Predictive Author ID</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+
+    <!--Nav Bar Sit on top -->
+
+  <nav class="navbar navbar-default navbar-static-top">
+        
+            <div class="container-fluid">
+        
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+        
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                  <a class="navbar-brand" href="index.html">
+                    <img src="images/solid bird.png" alt="bird" class="bird">
+                </a>
+        
+              </div> <!--Navbar header-->
+                  
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="navbar-collapse-1">
+        
+                <ul class="nav navbar-nav">
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="nll_project.html">Project Home<span class="sr-only">(current)</span></a></li>
+                    <li>
+                    <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Plots
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="nll_vis1.html">Wordsize Distribution</a>
+                              <a class="dropdown-item" href="nll_vis2.html">Sentiment Scores</a>
+                              <a class="dropdown-item" href="nll_vis3.html">Punctuation</a>
+                              <a class="dropdown-item" href="nll_vis4.html">Third Person Pronouns</a>
+                            </div>
+                          </div>
+                        </li>
+                    <li><a href="nll_comparisons.html">Comparisons</a></li>
+                    <li><a href="nll_data.html">Data</a></li>
+                </ul>
+            
+              </div><!-- /.navbar-collapse -->
+        
+            </div><!-- /.container-fluid -->
+
+            
+          </nav>
+
+          <div class="parallax">
+          <div class="container-fluid" style="padding-top:20px;">
+              <div class="row">
+                  <div class="col-sm-12 col-md-6">
+                      <div class="container-fluid whitebox">
+                      <h1>Predictive Author Analysis</h1>
+                    <img class="s-img" src="nll_images/train/sentiment_scores.png" alt="sentiment scores" height=200px width=auto>
+                    <p>Using the raw datasets from the Kaggle data competition 'Spooky Authors', we performed 
+                    a basic natural language analysis with the aim of identifying particular authors based 
+                    on a sample of their writing. We were interested in how each author varied with respect 
+                    to basic sentence structure & vocabulary, as well as sentiment analysis scores. We then
+                    assigned authorship to a test data set using the algorithm we developed from the training
+                    dataset and compared the assigned authorship dataset to the dataset with author already assigned.
+                    </p>
+                      </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="container-fluid whitebox">
+                        <h2>Plots</h2>
+                        <div class="row">
+                            <a class="plotitem" href="nll_vis1.html">
+                                <img src="nll_images/train/word_size_distribution.png" alt="word size distribution" height=100px width=150px>
+                            </a>
+                            <a class="plotitem" href="nll_vis2.html">
+                                <img src="nll_images/train/sentiment_scores.png" alt="sentiment scores" height=100px width=150px>
+                            </a>
+                        </div>
+                        <div class="row">
+                            <a class="plotitem" href="nll_vis3.html">
+                                <img src="nll_images/train/punctuation.png" alt="punctuation" height=100px width=150px>
+                            </a>
+                            <a class="plotitem" href="nll_vis4.html">
+                                <img src="nll_images/train/third_person.png" alt="third person pronouns" height=100px width=150px>
+                            </a>
+                        </div>
+                            </div>    
+                    </div>
+                </div>
+            </div>
+              <img src="images/desk.png" width="100%"> 
+            </div>
+</body>
+</html>

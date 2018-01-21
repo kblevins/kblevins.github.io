@@ -2,7 +2,7 @@
 
 <html lang="en">
 <head>
-    <title>Contact Kali</title>
+    <title>Punctuation</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">    
     <meta charset="utf-8">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -38,35 +38,38 @@
               <div class="collapse navbar-collapse" id="navbar-collapse-1">
         
                 <ul class="nav navbar-nav">
-                  <li><a href="bio.html">About <span class="sr-only">(current)</span></a></li>
-                  <li><a href="projects.html">Projects</a></li>
-                  <li class="active"><a href="contact.html">Contact</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="nll_project.html">Project Home<span class="sr-only">(current)</span></a></li>
+                    <li>
+                    <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Plots
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="nll_vis1.html">Wordsize Distribution</a>
+                              <a class="dropdown-item" href="nll_vis2.html">Sentiment Scores</a>
+                              <a class="dropdown-item" href="nll_vis3.html">Punctuation</a>
+                              <a class="dropdown-item" href="nll_vis4.html">Third Person Pronouns</a>
+                            </div>
+                          </div>
+                        </li>
+                    <li><a href="nll_comparisons.html">Comparisons</a></li>
+                    <li><a href="nll_data.html">Data</a></li>
                 </ul>
             
               </div><!-- /.navbar-collapse -->
         
             </div><!-- /.container-fluid -->
+
+            
           </nav>
 
-<div class="parallax">
-    
-        <img class='top-image' src="images/contact.png" alt = 'contact' width="55%" height="auto">
-
-    <section>
-            <ul>
-                    <li class="kli"><strong>Email:</strong> <a href="mailto://kkblevins@gmail.com">kkblevins@gmail.com</a></li>
-                    <li class="kli"><strong>Github:</strong> <a href="http://github/kaliblevins.com">github/kaliblevins.com</a></li>
-                    <li class="kli"><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/kali-k-blevins/">https://www.linkedin.com/in/kali-k-blevins/</a></li>
-
-                  </ul>
-</section>
-
-<img src="images/desk.png" width="100%">   
+          <div class="parallax">
+          <div class="container-fluid plotbox">
+          <img src="nll_images/train/punctuation.png" alt="punctuation" height=500px width=auto>
+          <p>Each author has a unique style of using punctuation.</p>
+        </div>
+        <img src="images/desk.png" width="100%"> 
     </div>
-    
-    
-</body>
-
-
-
+        </body>
 </html>

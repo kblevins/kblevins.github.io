@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>Predictive Author ID</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+
+  <!--Nav Bar Sit on top -->
+
+  <nav class="navbar navbar-default navbar-static-top">
+        
+            <div class="container-fluid">
+        
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+        
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                  <a class="navbar-brand" href="index.html">
+                    <img src="images/solid bird.png" alt="bird" class="bird">
+                </a>
+        
+              </div> <!--Navbar header-->
+                  
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="navbar-collapse-1">
+        
+                <ul class="nav navbar-nav">
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="nll_project.html">Project Home<span class="sr-only">(current)</span></a></li>
+                    <li>
+                    <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              Plots
+                            </button>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                              <a class="dropdown-item" href="nll_vis1.html">Wordsize Distribution</a>
+                              <a class="dropdown-item" href="nll_vis2.html">Sentiment Scores</a>
+                              <a class="dropdown-item" href="nll_vis3.html">Punctuation</a>
+                              <a class="dropdown-item" href="nll_vis4.html">Third Person Pronouns</a>
+                            </div>
+                          </div>
+                        </li>
+                    <li><a href="nll_comparisons.html">Comparisons</a></li>
+                    <li><a href="nll_data.html">Data</a></li>
+                </ul>
+            
+              </div><!-- /.navbar-collapse -->
+        
+            </div><!-- /.container-fluid -->
+
+            
+          </nav>
+
+          <div class="parallax">
+          <div class="plotbox box1">
+  <h1 style="margin-top:0; padding-top:20px;">Data</h1>
+  <table class="table table-striped table-bordered table-hover table-condensed">
+      <thead><tr>
+        <th>id</td>
+        <th>text</th>
+        <th>author</th>
+        </tr>
+      </thead>
+        <tbody>
+        <tr>
+        <td>id26305</td>
+        <td>This process, however, afforded me no means of ascertaining the dimensions of my dungeon; as I might make its circuit, and return to the point whence I set out, without being aware of the fact; so perfectly uniform seemed the wall.</td>
+        <td>EAP</td>
+        </tr>
+        <tr>
+        <td>id17569</td>
+        <td>It never once occurred to me that the fumbling might be a mere mistake.</td>
+        <td>HPL</td>
+        </tr>
+        <tr>
+        <td>id11008</td>
+        <td>In his left hand was a gold snuff box, from which, as he capered down the hill, cutting all manner of fantastic steps, he took snuff incessantly with an air of the greatest possible self satisfaction.</td>
+        <td>EAP</td>
+        </tr>
+        <tr>
+        <td>id27763</td>
+        <td>How lovely is spring As we looked from Windsor Terrace on the sixteen fertile counties spread beneath, speckled by happy cottages and wealthier towns, all looked as in former years, heart cheering and fair.</td>
+        <td>MWS</td>
+        </tr>
+        <tr>
+        <td>id12958</td>
+        <td>Finding nothing else, not even gold, the Superintendent abandoned his attempts; but a perplexed look occasionally steals over his countenance as he sits thinking at his desk.</td>
+        <td>HPL</td>
+        </tr>
+        <tr>
+        <td>id22965</td>
+        <td>A youth passed in solitude, my best years spent under your gentle and feminine fosterage, has so refined the groundwork of my character that I cannot overcome an intense distaste to the usual brutality exercised on board ship: I have never believed it to be necessary, and when I heard of a mariner equally noted for his kindliness of heart and the respect and obedience paid to him by his crew, I felt myself peculiarly fortunate in being able to secure his services.</td>
+        <td>MWS</td>
+        </tr>
+        <tr>
+        <td>id09674</td>
+        <td>The astronomer, perhaps, at this point, took refuge in the suggestion of non luminosity; and here analogy was suddenly let fall.</td>
+        <td>EAP</td>
+        </tr>
+        <tr>
+        <td>id13515</td>
+        <td>The surcingle hung in ribands from my body.</td>
+        <td>EAP</td>
+        </tr>
+        <tr>
+        <td>id19322</td>
+        <td>I knew that you could not say to yourself &#39;stereotomy&#39; without being brought to think of atomies, and thus of the theories of Epicurus; and since, when we discussed this subject not very long ago, I mentioned to you how singularly, yet with how little notice, the vague guesses of that noble Greek had met with confirmation in the late nebular cosmogony, I felt that you could not avoid casting your eyes upward to the great nebula in Orion, and I certainly expected that you would do so.</td>
+        <td>EAP</td>
+        </tr>
+        <tr>
+        <td>id00912</td>
+        <td>I confess that neither the structure of languages, nor the code of governments, nor the politics of various states possessed attractions for me.</td>
+        <td>MWS</td>
+        </tr>
+        <tr>
+        <td>id16737</td>
+        <td>He shall find that I can feel my injuries; he shall learn to dread my revenge&quot; A few days after he arrived.</td>
+        <td>MWS</td>
+        </tr>
+        <tr>
+        <td>id16607</td>
+        <td>Here we barricaded ourselves, and, for the present were secure.</td>
+        <td>EAP</td>
+        </tr>
+        <tr>
+        <td>id19764</td>
+        <td>Herbert West needed fresh bodies because his life work was the reanimation of the dead.</td>
+        <td>HPL</td>
+        </tr>
+        <tr>
+        <td>id18886</td>
+        <td>The farm like grounds extended back very deeply up the hill, almost to Wheaton Street.</td>
+        <td>HPL</td>
+        </tr>
+        <tr>
+        <td>id17189</td>
+        <td>But a glance will show the fallacy of this idea.</td>
+        <td>EAP</td>
+        </tr>
+        <tr>
+        <td>id12799</td>
+        <td>He had escaped me, and I must commence a destructive and almost endless journey across the mountainous ices of the ocean, amidst cold that few of the inhabitants could long endure and which I, the native of a genial and sunny climate, could not hope to survive.</td>
+        <td>MWS</td>
+        </tr>
+        <tr>
+        <td>id08441</td>
+        <td>To these speeches they gave, of course, their own interpretation; fancying, no doubt, that at all events I should come into possession of vast quantities of ready money; and provided I paid them all I owed, and a trifle more, in consideration of their services, I dare say they cared very little what became of either my soul or my carcass.</td>
+        <td>EAP</td>
+        </tr>
+        <tr>
+        <td>id13117</td>
+        <td>Her native sprightliness needed no undue excitement, and her placid heart reposed contented on my love, the well being of her children, and the beauty of surrounding nature.</td>
+        <td>MWS</td>
+        </tr>
+        <tr>
+        <td>id14862</td>
+        <td>I even went so far as to speak of a slightly hectic cough with which, at one time, I had been troubled of a chronic rheumatism of a twinge of hereditary gout and, in conclusion, of the disagreeable and inconvenient, but hitherto carefully concealed, weakness of my eyes.</td>
+        <td>EAP</td>
+        </tr>
+        <tr>
+        <td>id20836</td>
+        <td>His facial aspect, too, was remarkable for its maturity; for though he shared his mother&#39;s and grandfather&#39;s chinlessness, his firm and precociously shaped nose united with the expression of his large, dark, almost Latin eyes to give him an air of quasi adulthood and well nigh preternatural intelligence.</td>
+        <td>HPL</td>
+        </tr>
+        <tr>
+        <td>id11411</td>
+        <td>Now the net work was not permanently fastened to the hoop, but attached by a series of running loops or nooses.</td>
+        <td>EAP</td>
+        </tr>
+        <tr>
+        <td>id08075</td>
+        <td>It was not that the sounds were hideous, for they were not; but that they held vibrations suggesting nothing on this globe of earth, and that at certain intervals they assumed a symphonic quality which I could hardly conceive as produced by one player.</td>
+        <td>HPL</td>
+        </tr>
+        <tr>
+        <td>id18925</td>
+        <td>On every hand was a wilderness of balconies, of verandas, of minarets, of shrines, and fantastically carved oriels.</td>
+        <td>EAP</td>
+        </tr>
+        <tr>
+        <td>id19925</td>
+        <td>With how deep a spirit of wonder and perplexity was I wont to regard him from our remote pew in the gallery, as, with step solemn and slow, he ascended the pulpit This reverend man, with countenance so demurely benign, with robes so glossy and so clerically flowing, with wig so minutely powdered, so rigid and so vast, could this be he who, of late, with sour visage, and in snuffy habiliments, administered, ferule in hand, the Draconian laws of the academy?</td>
+        <td>EAP</td>
+        </tr>
+        <tr>
+        <td>id01704</td>
+        <td>These bizarre attempts at explanation were followed by others equally bizarre.</td>
+        <td>EAP</td>
+        </tr>
+        <tr>
+        <td>id10125</td>
+        <td>For many prodigies and signs had taken place, and far and wide, over sea and land, the black wings of the Pestilence were spread abroad.</td>
+        <td>EAP</td>
+        </tr>
+        <tr>
+        <td>id02448</td>
+        <td>All that as yet can fairly be said to be known is, that &#39;Pure gold can be made at will, and very readily from lead in connection with certain other substances, in kind and in proportions, unknown.&#39; Speculation, of course, is busy as to the immediate and ultimate results of this discovery a discovery which few thinking persons will hesitate in referring to an increased interest in the matter of gold generally, by the late developments in California; and this reflection brings us inevitably to another the exceeding inopportuneness of Von Kempelen&#39;s analysis.</td>
+        <td>EAP</td>
+        </tr>
+        <tr>
+        <td>id23451</td>
+        <td>I seemed to be upon the verge of comprehension without power to comprehend men, at times, find themselves upon the brink of remembrance without being able, in the end, to remember.</td>
+        <td>EAP</td>
+        </tr>
+        <tr>
+        <td>id27907</td>
+        <td>Our compasses, depth gauges, and other delicate instruments were ruined; so that henceforth our only reckoning would be guesswork, based on our watches, the calendar, and our apparent drift as judged by any objects we might spy through the portholes or from the conning tower.</td>
+        <td>HPL</td>
+        </tr>
+        <tr>
+        <td>id08121</td>
+        <td>This the young warriors took back with them to Sarnath as a symbol of conquest over the old gods and beings of Ib, and a sign of leadership in Mnar.</td>
+        <td>HPL</td>
+        </tr>
+        <tr>
+        <td>id15222</td>
+        <td>Meantime the whole Paradise of Arnheim bursts upon the view.</td>
+        <td>EAP</td>
+        </tr>
+        <tr>
+        <td>id00764</td>
+        <td>I was rich and young, and had a guardian appointed for me; and all about me would act as if I were one of their great society, while I must keep the secret that I really was cut off from them for ever.</td>
+        <td>MWS</td>
+        </tr>
+        <tr>
+        <td>id00683</td>
+        <td>We could make out little by the dim light, but they seemed to contain prophecies, detailed relations of events but lately passed; names, now well known, but of modern date; and often exclamations of exultation or woe, of victory or defeat, were traced on their thin scant pages.</td>
+        <td>MWS</td>
+        </tr>
+        <tr>
+        <td>id11733</td>
+        <td>Even now They talked in Their tombs.</td>
+        <td>HPL</td>
+        </tr>
+        <tr>
+        <td>id03205</td>
+        <td>Sheehan especially did they ply with inquiries, yet without eliciting any information of value concerning Old Bugs.</td>
+        <td>HPL</td>
+        </tr>
+        <tr>
+        <td>id01948</td>
+        <td>He cried aloud once, and a little later gave a gasp that was more terrible than a cry.</td>
+        <td>HPL</td>
+        </tr>
+        <tr>
+        <td>id22412</td>
+        <td>The old tracks crossed River Street at grade, and at once veered off into a region increasingly rural and with less and less of Innsmouth&#39;s abhorrent fishy odour.</td>
+        <td>HPL</td>
+        </tr>
+        <tr>
+        <td>id05258</td>
+        <td>His soul overflowed with ardent affections, and his friendship was of that devoted and wondrous nature that the world minded teach us to look for only in the imagination.</td>
+        <td>MWS</td>
+        </tr>
+        <tr>
+        <td>id00144</td>
+        <td>After the first start, he replaced the tissue wrapping around the portrait, as if to shield it from the sordidness of the place.</td>
+        <td>HPL</td>
+        </tr>
+        <tr>
+        <td>id19576</td>
+        <td>&quot;The present peculiar condition of affairs at court, and especially of those intrigues in which D is known to be involved, would render the instant availability of the document its susceptibility of being produced at a moment&#39;s notice a point of nearly equal importance with its possession.&quot;</td>
+        <td>EAP</td>
+        </tr>
+        <tr>
+        <td>id01577</td>
+        <td>Wilbur&#39;s growth was indeed phenomenal, for within three months of his birth he had attained a size and muscular power not usually found in infants under a full year of age.</td>
+        <td>HPL</td>
+        </tr>
+        <tr>
+        <td>id01651</td>
+        <td>Pausing, I succeeded with difficulty in raising it, whereupon there was revealed a black aperture, exhaling noxious fumes which caused my torch to sputter, and disclosing in the unsteady glare the top of a flight of stone steps.</td>
+        <td>HPL</td>
+        </tr>
+        <tr>
+        <td>id27080</td>
+        <td>It was all mud an&#39; water, an&#39; the sky was dark, an&#39; the rain was wipin&#39; aout all tracks abaout as fast as could be; but beginnin&#39; at the glen maouth, whar the trees had moved, they was still some o&#39; them awful prints big as bar&#39;ls like he seen Monday.&quot;</td>
+        <td>HPL</td>
+        </tr>
+        <tr>
+        <td>id20751</td>
+        <td>The visits of Merrival to Windsor, before frequent, had suddenly ceased.</td>
+        <td>MWS</td>
+        </tr>
+        <tr>
+        <td>id21136</td>
+        <td>It is not to be supposed, however, that the great Underduk suffered this impertinence on the part of the little old man to pass off with impunity.</td>
+        <td>EAP</td>
+        </tr>
+        <tr>
+        <td>id10279</td>
+        <td>I need not tell you how sceptical I have hitherto been on the topic of the soul&#39;s immortality.</td>
+        <td>EAP</td>
+        </tr>
+        <tr>
+        <td>id12683</td>
+        <td>I often compared myself to them, and finding that my chief superiority consisted in power, I soon persuaded myself that it was in power only that I was inferior to the chiefest potentates of the earth.</td>
+        <td>MWS</td>
+        </tr>
+        <tr>
+        <td>id19180</td>
+        <td>And the children&#39;s children, and the newcomers&#39; children, grew up.</td>
+        <td>HPL</td>
+        </tr>
+        <tr>
+        <td>id02236</td>
+        <td>Dr. Johnson, as I beheld him, was a full, pursy Man, very ill drest, and of slovenly Aspect.</td>
+        <td>HPL</td>
+        </tr>
+        <tr>
+        <td>id11523</td>
+        <td>Presently the murmur of water fell gently upon my ear and in a few moments afterward, as I turned with the road somewhat more abruptly than hitherto, I became aware that a building of some kind lay at the foot of a gentle declivity just before me.</td>
+        <td>EAP</td>
+        </tr>
+        <tr>
+        <td>id22530</td>
+        <td>Ellison was remarkable in the continuous profusion of good gifts lavished upon him by fortune.</td>
+        <td>EAP</td>
+        </tr>
+        <tr>
+        <td>id22197</td>
+        <td>I still continued in the plane of the elipse, but made little progress to the eastward.</td>
+        <td>EAP</td>
+        </tr>
+        <tr>
+        <td>id24941</td>
+        <td>It was useless to provide many things, for we should find abundant provision in every town.</td>
+        <td>MWS</td>
+        </tr>
+        <tr>
+        <td>id15218</td>
+        <td>They fly quickly over the snow in their sledges; the motion is pleasant, and, in my opinion, far more agreeable than that of an English stagecoach.</td>
+        <td>MWS</td>
+        </tr>
+        <tr>
+        <td>id02164</td>
+        <td>I pointed to the spot where he had disappeared, and we followed the track with boats; nets were cast, but in vain.</td>
+        <td>MWS</td>
+        </tr>
+        <tr>
+        <td>id17654</td>
+        <td>I have indistinct recollections of a great storm some time after I reached the boat; at any rate, I know that I heard peals of thunder and other tones which Nature utters only in her wildest moods.</td>
+        <td>HPL</td>
+        </tr>
+        <tr>
+        <td>id20824</td>
+        <td>There had seemed to be no one in the courtyard below, and I hoped there would be a chance to get away before the spreading of a general alarm.</td>
+        <td>HPL</td>
+        </tr>
+        <tr>
+        <td>id21164</td>
+        <td>Mein Gott do you take me vor a shicken?&quot; &quot;No oh no&quot; I replied, much alarmed, &quot;you are no chicken certainly not.&quot;</td>
+        <td>EAP</td>
+        </tr>
+        <tr>
+        <td>id08820</td>
+        <td>Perpetual fear had jaundiced his complexion, and shrivelled his whole person.</td>
+        <td>MWS</td>
+        </tr>
+        <tr>
+        <td>id17407</td>
+        <td>The sun set; the atmosphere grew dim and the evening star no longer shone companionless.</td>
+        <td>MWS</td>
+        </tr>
+        <tr>
+        <td>id05166</td>
+        <td>The rain ceased; the clouds sunk behind the horizon; it was now evening, and the sun descended swiftly the western sky.</td>
+        <td>MWS</td>
+        </tr>
+        <tr>
+        <td>id07779</td>
+        <td>Nothing, however, occurred except some hill noises; and when the day came there were many who hoped that the new horror had gone as swiftly as it had come.</td>
+        <td>HPL</td>
+        </tr>
+        <tr>
+        <td>id14749</td>
+        <td>The state rooms were sufficiently roomy, and each had two berths, one above the other.</td>
+        <td>EAP</td>
+        </tr>
+        <tr>
+        <td>id10634</td>
+        <td>It was getting dark, and the ancient roofs and chimney pots outside looked very queer through the bull&#39;s eye window panes.</td>
+        <td>HPL</td>
+        </tr>
+        <tr>
+        <td>id03555</td>
+        <td>They were marched to various parts of the southern counties, quartered in deserted villages, a part were sent back to their own island, while the season of winter so far revived our energy, that the passes of the country were defended, and any increase of numbers prohibited.</td>
+        <td>MWS</td>
+        </tr>
+        <tr>
+        <td>id26727</td>
+        <td>We suffered no little from cold, and the dampness of the atmosphere was most unpleasant; but the ample space in the car enabled us to lie down, and by means of cloaks and a few blankets, we did sufficiently well.</td>
+        <td>EAP</td>
+        </tr>
+        <tr>
+        <td>id06312</td>
+        <td>I dared, I conquered them all, till now I have sold myself to death, with the sole condition that thou shouldst follow me Fire, and war, and plague, unite for thy destruction O my Raymond, there is no safety for thee&quot; With an heavy heart I listened to the changes of her delirium; I made her a bed of cloaks; her violence decreased and a clammy dew stood on her brow as the paleness of death succeeded to the crimson of fever, I placed her on the cloaks.</td>
+        <td>MWS</td>
+        </tr>
+        <tr>
+        <td>id24464</td>
+        <td>Again he seemed to be in the interior of a house an old house, apparently but the details and inhabitants were constantly changing, and he could never be certain of the faces or the furniture, or even of the room itself, since doors and windows seemed in just as great a state of flux as the more presumably mobile objects.</td>
+        <td>HPL</td>
+        </tr>
+        <tr>
+        <td>id18006</td>
+        <td>This gentleman was clothed from head to foot in a richly embroidered black silk velvet pall, wrapped negligently around his form after the fashion of a Spanish cloak.</td>
+        <td>EAP</td>
+        </tr>
+        <tr>
+        <td>id04459</td>
+        <td>The pigeons appeared distressed in the extreme, and struggled to escape; while the cat mewed piteously, and, with her tongue hanging out of her mouth, staggered to and fro in the car as if under the influence of poison.</td>
+        <td>EAP</td>
+        </tr>
+        <tr>
+        <td>id06749</td>
+        <td>&quot;And what about the window panes?&quot; &quot;They were all gone.</td>
+        <td>HPL</td>
+        </tr>
+        <tr>
+        <td>id11062</td>
+        <td>I panted I gasped for breath There could be no doubt of the design of my tormentors oh most unrelenting oh most demoniac of men I shrank from the glowing metal to the centre of the cell.</td>
+        <td>EAP</td>
+        </tr>
+        <tr>
+        <td>id01571</td>
+        <td>With great difficulty I gained my feet, and looking dizzily around, was, at first, struck with the idea of our being among breakers; so terrific, beyond the wildest imagination, was the whirlpool of mountainous and foaming ocean within which we were engulfed.</td>
+        <td>EAP</td>
+        </tr>
+        <tr>
+        <td>id03152</td>
+        <td>The next morning I delivered my letters of introduction and paid a visit to some of the principal professors.</td>
+        <td>MWS</td>
+        </tr>
+        <tr>
+        <td>id06412</td>
+        <td>Nor did Raymond make an end without drawing in vivid and glowing colours, the splendour of a kingdom, in opposition to the commercial spirit of republicanism.</td>
+        <td>MWS</td>
+        </tr>
+        <tr>
+        <td>id10155</td>
+        <td>How this celebrated Magazine can sustain its evidently tremendous expenses, is more than we can understand.</td>
+        <td>EAP</td>
+        </tr>
+        <tr>
+        <td>id24823</td>
+        <td>In a week or two it had visibly faded, and in the course of a few months it was hardly discernible with the naked eye.&quot;</td>
+        <td>HPL</td>
+        </tr>
+        <tr>
+        <td>id06377</td>
+        <td>The stranger learned about twenty words at the first lesson; most of them, indeed, were those which I had before understood, but I profited by the others.</td>
+        <td>MWS</td>
+        </tr>
+        <tr>
+        <td>id01222</td>
+        <td>Each people looked on the coming struggle as that which would be to a great degree decisive; as, in case of victory, the next step would be the siege of Constantinople by the Greeks.</td>
+        <td>MWS</td>
+        </tr>
+        <tr>
+        <td>id10142</td>
+        <td>&quot;But could not the cavity be detected by sounding?&quot;</td>
+        <td>EAP</td>
+        </tr>
+        <tr>
+        <td>id08521</td>
+        <td>My lieutenant, for instance, is a man of wonderful courage and enterprise; he is madly desirous of glory, or rather, to word my phrase more characteristically, of advancement in his profession.</td>
+        <td>MWS</td>
+        </tr>
+        <tr>
+        <td>id13267</td>
+        <td>Within twenty four hours that machine near the table will generate waves acting on unrecognised sense organs that exist in us as atrophied or rudimentary vestiges.</td>
+        <td>HPL</td>
+        </tr>
+        <tr>
+        <td>id06001</td>
+        <td>&quot;Everybody got aout o&#39; the idee o&#39; dyin&#39; excep&#39; in canoe wars with the other islanders, or as sacrifices to the sea gods daown below, or from snake bite or plague or sharp gallopin&#39; ailments or somethin&#39; afore they cud take to the water but simply looked forrad to a kind o&#39; change that wa&#39;n&#39;t a bit horrible arter a while.</td>
+        <td>HPL</td>
+        </tr>
+        <tr>
+        <td>id22877</td>
+        <td>The lips were of the usual marble pallor.</td>
+        <td>EAP</td>
+        </tr>
+        <tr>
+        <td>id02647</td>
+        <td>&quot;That is absolutely needless,&quot; replied G .</td>
+        <td>EAP</td>
+        </tr>
+        <tr>
+        <td>id10154</td>
+        <td>Ahead lay sparse grass and scrub blueberry bushes, and beyond them the naked rock of the crag and the thin peak of the dreaded grey cottage.</td>
+        <td>HPL</td>
+        </tr>
+        <tr>
+        <td>id22605</td>
+        <td>To be near him, to be loved by him, to feel him again her own, was the limit of her desires.</td>
+        <td>MWS</td>
+        </tr>
+        <tr>
+        <td>id18034</td>
+        <td>The sky was serene; and, as I was unable to rest, I resolved to visit the spot where my poor William had been murdered.</td>
+        <td>MWS</td>
+        </tr>
+        <tr>
+        <td>id27266</td>
+        <td>I say &quot;thing&quot; be it observed for they tell me the Latin for it is rem.</td>
+        <td>EAP</td>
+        </tr>
+        <tr>
+        <td>id10676</td>
+        <td>All that he said threw greatly into the shade Cornelius Agrippa, Albertus Magnus, and Paracelsus, the lords of my imagination; but by some fatality the overthrow of these men disinclined me to pursue my accustomed studies.</td>
+        <td>MWS</td>
+        </tr>
+        <tr>
+        <td>id03833</td>
+        <td>The ex queen gives me Idris; Adrian is totally unfitted to succeed to the earldom, and that earldom in my hands becomes a kingdom.</td>
+        <td>MWS</td>
+        </tr>
+        <tr>
+        <td>id16135</td>
+        <td>The pupils, too, upon any accession or diminution of light, underwent contraction or dilation, just such as is observed in the feline tribe.</td>
+        <td>EAP</td>
+        </tr>
+        <tr>
+        <td>id19878</td>
+        <td>&quot;Keep up the largest branch the one on this side,&quot; said Legrand.</td>
+        <td>EAP</td>
+        </tr>
+        <tr>
+        <td>id25019</td>
+        <td>And quivering awhile among the draperies of the room, it at length rested in full view upon the surface of the door of brass.</td>
+        <td>EAP</td>
+        </tr>
+        <tr>
+        <td>id18067</td>
+        <td>Maternal affection had not rendered Idris selfish; at the beginning of our calamity she had, with thoughtless enthusiasm, devoted herself to the care of the sick and helpless.</td>
+        <td>MWS</td>
+        </tr>
+        <tr>
+        <td>id23088</td>
+        <td>He came like a protecting spirit to the poor girl, who committed herself to his care; and after the interment of his friend he conducted her to Geneva and placed her under the protection of a relation.</td>
+        <td>MWS</td>
+        </tr>
+        <tr>
+        <td>id06172</td>
+        <td>I had expected some extravagant proposition, and remained silent awhile, collecting my thoughts that I might the better combat her fanciful scheme.</td>
+        <td>MWS</td>
+        </tr>
+        </tbody>
+  </table>
+</div>
+<img src="images/desk.png" width="100%"> 
+</div>         
+</body>
+</html>
